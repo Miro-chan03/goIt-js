@@ -1,12 +1,7 @@
 "use strict";
-
- let price;
+let price;
 let text;
-let country = prompt('Введите страну');
-if (country == null ) {
-    country = '';
-}
-country = country.toLowerCase();
+let country = prompt('Введите страну').toLowerCase();
 
 switch (country) {
     case 'китай' :
@@ -17,25 +12,25 @@ switch (country) {
         break;
 
     case 'чили':
-            country = 'Чили';
-            price = 250;
-            text = ' Доставка в ' +country+  ' будет стоить '+price+ ' кредитов.';
-            console.log(text);
-            break;
+        country = 'Чили';
+        price = 250;
+        text = ' Доставка в ' +country+  ' будет стоить '+price+ ' кредитов.';
+        console.log(text);
+        break;
 
-     case 'австралия':
-                country = 'Австралию';
-                price = 170;
-                text = ' Доставка в ' +country+  ' будет стоить '+price+ ' кредитов.';
-                console.log(text);
-                break;
+    case 'австралия':
+        country = 'Австралию';
+        price = 170;
+        text = ' Доставка в ' +country+  ' будет стоить '+price+ ' кредитов.';
+        console.log(text);
+        break;
 
     case 'индия':
-    country = 'Индию';
-    price = 80;
-    text = ' Доставка в ' +country+  ' будет стоить '+price+ ' кредитов.';
-    console.log(text);
-    break;
+        country = 'Индию';
+        price = 80;
+        text = ' Доставка в ' +country+  ' будет стоить '+price+ ' кредитов.';
+        console.log(text);
+        break;
 
     case 'Ямайка':
         country = 'Ямайку';
@@ -46,5 +41,4 @@ switch (country) {
 
     default:
         alert('В вашей стране доставка не доступна')
-    
 }
