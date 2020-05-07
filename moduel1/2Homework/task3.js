@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 // 1 task
 const var1 = 1;
 const var2 = 0;
