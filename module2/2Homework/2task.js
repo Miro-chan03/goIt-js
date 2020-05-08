@@ -6,7 +6,6 @@ authors[6] = 'Miguel de Cervantes';
 authors[7] = 'Anton Chekhov';
 authors.unshift('Charles Dickens', 'Edgar Allan Poe','Gabriel Garcia Marquez');
 console.log(authors);// 11
-
 // 2 task
 const scores = [12, 32, 15, 17, 3, 4, 98, 67, 532, 611, 7, 100, 42];
 scores.shift(12);
@@ -22,23 +21,22 @@ const results = [12, 32, 15, 17, 3, 4, 98, 67, 532, 611, 7, 100, 42];
  console.log(results);
  console.log(removeFromEnd);
  console.log(removeFromStart);
-
-
  // task 4
  const partOfResults = [3, 4, 98, 67, 532,];
-
  //task 5
 const doubleResults = [15, 17, 3, 4, 98, 67, 532, 611];
-
  //task 6
-//  = doubleResults.splice(3,2);
-//  const evenResults
-
- 
-//  console.log(evenResults);
+let evenResults;
+let oddResults;
+for (let i = 0; i < doubleResults.length; i += 1) {
+    if ((doubleResults[i] % 2) === 0) {
+      continue;
+    } 
+    console.log([i]);
+//console.log(evenResults);
 //  console.log(oddResults);
-
+  }
 
  //task 7
-
+//const AllResults = oddResults.concat(evenResults);
 
