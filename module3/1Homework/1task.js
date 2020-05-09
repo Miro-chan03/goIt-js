@@ -88,7 +88,14 @@ const products = [
 ];
  
 const calculateTotalPrice = function (allProdcuts, productName) {
-  return products.reduce((price,) =>  price * quantity, 0)
+  let res = 0;
+  for (let i = 0; i < allProdcuts.length; i += 1){
+    if (allProdcuts[i].name == productName){
+      res = allProdcuts[i].price * allProdcuts[i].quantity;
+      break;
+    }
+  }
+  return res;
  };
  
 // Вызовы функции для проверки работоспособности твоей реализации.

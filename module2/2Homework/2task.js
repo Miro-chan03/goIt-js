@@ -26,17 +26,34 @@ const results = [12, 32, 15, 17, 3, 4, 98, 67, 532, 611, 7, 100, 42];
  //task 5
 const doubleResults = [15, 17, 3, 4, 98, 67, 532, 611];
  //task 6
-let evenResults;
-let oddResults;
+let evenResults =[];
+let oddResults = [];
 for (let i = 0; i < doubleResults.length; i += 1) {
     if ((doubleResults[i] % 2) === 0) {
-      continue;
+      evenResults.push(doubleResults[i]);
+      //continue;
+      
     } 
-    console.log([i]);
-//console.log(evenResults);
-//  console.log(oddResults);
+    else {
+      oddResults.push(doubleResults[i]);
+    }
   }
+    console.log(evenResults);
+    console.log(oddResults);
 
  //task 7
-//const AllResults = oddResults.concat(evenResults);
+let includesOne = [];
+const AllResults = oddResults.concat(evenResults);
+
+ for (let i = 0; i < AllResults.length; i += 1) {
+   let txt = String(AllResults[i]); 
+   if (txt.indexOf('1') > -1){
+     includesOne.push(AllResults[i]);
+   }
+ }
+  console.log(includesOne);
+
+// Перебери новый массив AllResults и выбери только те элементы массива,
+// которые содержат 1 и запиши эти элементы в новый массив includesOne
+// "обрати внимание, что массив includesOne должен содержать элемента с типом number, а не string!
 
