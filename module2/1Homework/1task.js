@@ -39,8 +39,9 @@ for (let i = 0; i < test1.length; i += 1) {
 }
  // 5 task
  const tests = test1.concat(test2,test3);
- for (let i = 0; i < 1; i += 1) {
-  console.log(test1);
-  console.log(test2);
-  console.log(test3);
+ for (let i = 0; i < tests.length; i += 1) {
+  console.log(tests[i]);
+  for (let j = 0; j < tests[i].length; j += 1) {
+    console.log(tests[i][j]);
+  }
 }

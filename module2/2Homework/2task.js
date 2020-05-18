@@ -1,18 +1,20 @@
 "use strict";
 // 1 task
 const authors = ['William Shakespeare', 'Guy de Maupassant', 'Dante Alighieri', 'Mikhail Bulgakov', 'Albert Camus', 'Erich Maria Remarque'];
-authors[5] =  'Honore de Balzac';
-authors[6] = 'Miguel de Cervantes';
-authors[7] = 'Anton Chekhov';
-authors.unshift('Charles Dickens', 'Edgar Allan Poe','Gabriel Garcia Marquez');
-console.log(authors);// 11
+authors.push("Honore de Balzac");
+authors.push( "Miguel de Cervantes");
+authors.push("Anton Chekhov");
+authors.unshift('Charles Dickens');
+authors.unshift( 'Edgar Allan Poe');
+authors.unshift('Gabriel Garcia Marquez');
+console.log(authors);// 12
 // 2 task
 const scores = [12, 32, 15, 17, 3, 4, 98, 67, 532, 611, 7, 100, 42];
-scores.shift(12);
-scores.shift(32);
-scores.pop(7);
-scores.pop(100);
-scores.pop(42);
+scores.shift();
+scores.shift();
+scores.pop();
+scores.pop();
+scores.pop();
 console.log(scores);
 // 3 task
 const results = [12, 32, 15, 17, 3, 4, 98, 67, 532, 611, 7, 100, 42];
@@ -22,25 +24,26 @@ const results = [12, 32, 15, 17, 3, 4, 98, 67, 532, 611, 7, 100, 42];
  console.log(removeFromEnd);
  console.log(removeFromStart);
  // task 4
- const partOfResults = [3, 4, 98, 67, 532,];
+ const partOfResults = results.slice(2,7);
  //task 5
-const doubleResults = [15, 17, 3, 4, 98, 67, 532, 611];
+const doubleResults = results.slice();
+
  //task 6
 let evenResults =[];
 let oddResults = [];
 for (let i = 0; i < doubleResults.length; i += 1) {
     if ((doubleResults[i] % 2) === 0) {
-      evenResults.push(doubleResults[i]);
+      evenResults.unshift(doubleResults[i]);
       //continue;
       
     } 
     else {
-      oddResults.push(doubleResults[i]);
+      oddResults.unshift(doubleResults[i]);
     }
   }
     console.log(evenResults);
     console.log(oddResults);
-
+    
  //task 7
 let includesOne = [];
 const AllResults = oddResults.concat(evenResults);

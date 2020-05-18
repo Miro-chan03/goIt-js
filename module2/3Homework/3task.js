@@ -9,15 +9,15 @@
 // убедись, что функция выполнилась при любом ее выражении
  
 // FUNCTION EXPRESSION
-toPassTest = function(a){
-    alert("Прежде, чем выполнить это задание у тебя должно быть сдано пять тестов!")
+const toPassTest = function(){
+   alert("Прежде, чем выполнить это задание у тебя должно быть сдано пять тестов!");
 };
  
 // ARROW FUNCTION
 // тут объяви функцию как ARROW FUNCTION
-    toPassTest = () => alert("Прежде, чем выполнить это задание у тебя должно быть сдано пять тестов!");
+const toPassTest = () => alert("Прежде, чем выполнить это задание у тебя должно быть сдано пять тестов!");
 // вызов функции
-toPassTest(a);
+toPassTests();
  
 // ============== 2 =========================================
 // Напиши функцию checkAge как FUNCTION EXPRESSION 
@@ -31,6 +31,14 @@ toPassTest(a);
 // убедись, что функция выполнилась при любом ее выражении
 // FUNCTION EXPRESSION
 // тут объяви функцию как FUNCTION EXPRESSION
+let checkAge = function(){
+    
+       if (age ==< 18) {
+           alert("Here you are! You are got access!");
+       } else {
+           alert(" Sorry, you can't to get access");
+       }
+}
  
 // ARROW FUNCTION
 // тут объяви функцию как ARROW FUNCTION
